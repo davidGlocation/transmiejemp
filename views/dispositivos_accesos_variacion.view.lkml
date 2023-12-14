@@ -58,8 +58,9 @@ view: dispositivos_accesos_variacion {
   }
 
   dimension: geometria {
-    type: string
-    sql: ${TABLE}.geometria ;;
+    type: location
+    sql_latitude: ${TABLE}.device_lat ;;
+    sql_longitude: ${TABLE}.device_lon ;;
   }
 
   dimension: hora {

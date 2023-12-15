@@ -58,8 +58,9 @@ view: dispositivos_estaciones_variacion {
   }
 
   dimension: geometria {
-    type: string
-    sql: ${TABLE}.geometria ;;
+    type: location
+    sql_latitude: ${TABLE}.device_lat_est ;;
+    sql_longitude: ${TABLE}.device_lon_est ;;
   }
 
   dimension: hora {
